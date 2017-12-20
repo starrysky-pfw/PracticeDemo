@@ -3,9 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EF.CodeFirst", "EF.CodeFirst", "{76247737-8657-40FD-8A3D-3D548471D99F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworDemo", "EntityFrameworDemo\EntityFrameworDemo.csproj", "{3CB48E10-1232-4BE2-B157-AF35BBB21E4C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CB48E10-1232-4BE2-B157-AF35BBB21E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CB48E10-1232-4BE2-B157-AF35BBB21E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CB48E10-1232-4BE2-B157-AF35BBB21E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CB48E10-1232-4BE2-B157-AF35BBB21E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3CB48E10-1232-4BE2-B157-AF35BBB21E4C} = {76247737-8657-40FD-8A3D-3D548471D99F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B731B82-9E1A-4036-B5FF-560882B353D0}
