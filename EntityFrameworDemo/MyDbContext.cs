@@ -16,7 +16,7 @@ namespace EntityFrameworDemo
     /// </summary>
     public class MyDbContext : DbContext
     {
-        public const string connection = "Server=192.168.0.13;Database=EFAdvanced;uid=sa;pwd=sql2012;";
+        public const string connection = "Server=192.168.0.13;Database=EFAdvance;uid=sa;pwd=sql2012;";
         //注意：以下写法不能生成数据库到指定的服务器上 只能生成到 MSSQLLocalDB 中【暂未查找到具体原因】
         //public MyDbContext()
         //{
