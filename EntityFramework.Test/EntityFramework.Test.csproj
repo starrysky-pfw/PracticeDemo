@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3CB48E10-1232-4BE2-B157-AF35BBB21E4C}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EntityFrameworDemo</RootNamespace>
-    <AssemblyName>EntityFrameworDemo</AssemblyName>
+    <ProjectGuid>{72D98510-A987-4F9E-9BDE-C6DC24218D11}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>EntityFramework.Test</RootNamespace>
+    <AssemblyName>EntityFramework.Test</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -48,8 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DbMigrateConfig.cs" />
-    <Compile Include="MyDbContext.cs" />
+    <Compile Include="EFTest.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -57,9 +58,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EntityFrameworDemo\EntityFrameworkDemo.csproj">
+      <Project>{3cb48e10-1232-4be2-b157-af35bbb21e4c}</Project>
+      <Name>EntityFrameworkDemo</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EntityFramework.Domain\EntityFramework.Domain.csproj">
       <Project>{6125f0f5-cfc9-461a-9feb-f3d76ab9bcc8}</Project>
       <Name>EntityFramework.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityFrameworkCoreDemo\EntityFrameworkCoreDemo.csproj">
+      <Project>{8882bbd1-6cff-4a04-8dbf-cd139a89c9ef}</Project>
+      <Name>EntityFrameworkCoreDemo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
