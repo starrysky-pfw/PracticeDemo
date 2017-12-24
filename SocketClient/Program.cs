@@ -38,6 +38,7 @@ namespace SocketClient
             Console.WriteLine(recStr);
 
             clientSocket.Close();
+            Console.ReadLine();
         }
     }
 }
