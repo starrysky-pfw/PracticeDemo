@@ -63,6 +63,6 @@ print(small)
 
 #assert 断言 主要是在调试中抛出异常 例如：3 > 4 结果为false ; assert 3 > 4 则会抛出异常
 print("\nassert断言")
-val = 3 > 4
-print(val)
+rst = 3 > 4
+print(rst)
 
