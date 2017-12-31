@@ -66,3 +66,35 @@ print("\nassert断言")
 rst = 3 > 4
 print(rst)
 
+#列表中的操作符
+print("\n列表中的操作符")
+lista = [123]
+listb = [456]
+print(lista > listb)
+
+list1 = [123,456]
+list2 = [234,342]
+print(list1 > list2)
+
+list4 = list1 + list2  #例如list1.append(list2) 不建议使用+
+print(list4)
+list5 = list1 * 3
+print(123 in list1)
+list6 = [123,['abc','def'],345,34,101]
+print('abc' in list6)   #返回false 因为在数组里面一层 不能访问
+print('abc' in list6[1])    #返回true
+
+#列表中内置函数
+print("\n列表中内置函数")
+print(list6.count(123))  #计算123在数组里面出现了多少次
+print(list6.index(345)) #计算345在数组中出现第一次的索引值 可指定从哪个位置开始查找：list6.index(345,1,3)
+list7 = [12,2,8,23,65,1]
+list7.reverse() #将数组中的数据倒转
+print(list7)
+list7.sort()  #将数据按照升序排序
+print(list7)
+list7.sort(reverse=True)  #将数据按照升序排序
+print(list7)
+
+
+#元组
