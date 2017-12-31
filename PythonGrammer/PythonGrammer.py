@@ -96,5 +96,4 @@ print(list7)
 list7.sort(reverse=True)  #将数据按照升序排序
 print(list7)
 
-
 #元组
