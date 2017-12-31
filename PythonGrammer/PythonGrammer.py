@@ -66,6 +66,37 @@ print("\nassert断言")
 rst = 3 > 4
 print(rst)
 
+#列表 添加元素：append/extend/insert 获取元素 移除元素：remove/del/pop[默认删除最后一个值]
+stu = ['张三',12,['打篮球','打排球']]
+print(stu)
+stu.append('李四')
+print(stu)
+stu.extend(['王麻子','王五'])
+print(stu)
+stu.insert(0,'潘帅')
+print(stu)
+
+#获取元素值
+print(stu[1])  
+
+#移除元素
+stu.remove('李四')
+print(stu)
+del stu[0]
+stu.pop()
+stu.pop(0)
+tmp = stu.pop(0)
+print(tmp)
+
+ #列表分片 语法:数组[索引:索引] 一次性获取多个元素 [:]:获取数据全部元素
+a = stu[2:3]
+print(a)
+b = stu[:3]
+print(b)
+c = stu[:]
+print(c)
+
+
 #列表中的操作符
 print("\n列表中的操作符")
 lista = [123]
