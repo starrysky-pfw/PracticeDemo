@@ -127,4 +127,13 @@ print(list7)
 list7.sort(reverse=True)  #将数据按照升序排序
 print(list7)
 
-#元组
+#元组 tuple 两种写法  元素之间用逗号相隔离
+print("\n元组学习")
+tuplea = (1,2,3)
+tupleb = 1,2,3
+print(tuplea)
+print(tupleb)
+print(type(tuplea))
+print(type(tupleb))
+del(tuplea) #删除元组
+
