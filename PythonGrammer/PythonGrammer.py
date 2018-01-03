@@ -5,6 +5,10 @@ import math
 import PythonFunction
 print("--Python学习之旅--")
 
+##
+#BIF:内置函数
+##
+
 #转换函数
 print("\n转换函数")
 print(int('3'))
@@ -128,7 +132,7 @@ print(list7)
 list7.sort(reverse=True)  #将数据按照升序排序
 print(list7)
 
-#元组 tuple 两种写法  元素之间用逗号相隔离
+#元组 tuple 两种写法 元素之间用逗号相隔离
 print("\n元组学习")
 tuplea = (1,2,3)
 tupleb = 1,2,3
@@ -138,5 +142,40 @@ print(type(tuplea))
 print(type(tupleb))
 del(tuplea) #删除元组
 
-#python内置函数
+#python 函数定义
 PythonFunction.fun1()
+
+
+#python lambda表达式
+print("\nPython中lambda学习")
+def ds(x):
+    print(2 * x + 1)
+ds(5)  #函数调用
+lambda x:x * 5 + 1  #使用lambda 实现上面函数 冒号前面是参数 冒号后面是返回值
+g = lambda x:x * 5 + 1
+print(g(2))  #lambda表达式单参数调用
+def add(x,y):
+    print(x + y)
+add(1 ,2)
+g = lambda x,y:x + y   #lambda表达式多参数调用
+print(g(1,5))
+
+#python 过滤器 filter 语法：filter(function or None, iterable) --> filter object
+#filter【原理：第一个参数可以为一个函数或者None,第二个参数为迭代器，将第二个参数列表传入第一个参数的函数中 得到返回值为true的列表】
+#1.python filter None参数
+filter(None,[1,0,False,True])
+print(list(filter(None,[1,0,False,True])))
+
+#2.python filter function参数 得到奇数的过滤器
+def odd(x):
+    return x % 2 
+show = filter(odd,range(10))
+print(list(show))
+
+show = list(filter(lambda x:x % 2,range(10)))  #使用lambda实现上面的filter过滤函数
+print(show)
+
+#python map映射 内置 函数 语法：map(func, *iterables) --> map object
+#map【原理：使用iterables中的值依次传递到func中 最后返回一个数组】
+show = list(map(lambda x:x * 2 ,range(10))) 
+print(show)
