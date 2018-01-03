@@ -2,6 +2,7 @@
 #1.#表示注释；\n表示换行
 #2.引用外界包与java一样 使用import
 import math
+import PythonFunction
 print("--Python学习之旅--")
 
 #转换函数
@@ -128,3 +129,7 @@ list7.sort(reverse=True)  #将数据按照升序排序
 print(list7)
 
 #元组
+
+#python内置函数
+PythonFunction.fun1()
+
