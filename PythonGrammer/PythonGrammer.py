@@ -32,6 +32,12 @@ print(10 // 2.5)
 print(10 ** 2)
 print(100 + 2 - 1 * 10 / 2)
 
+#字符串
+name = 'starry sky'
+print(name.title())   #将字符串中的英文单词 首字母变为大写
+print(name.upper())
+
+
 #for循环
 print("\nfor循环")
 for x in [10,20,30]:
@@ -179,3 +185,7 @@ print(show)
 #map【原理：使用iterables中的值依次传递到func中 最后返回一个数组】
 show = list(map(lambda x:x * 2 ,range(10))) 
 print(show)
+
+#使用easygui
+import easygui as g
+g.msgbox('这里是内容主体','提示','确定')
