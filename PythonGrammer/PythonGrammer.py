@@ -185,7 +185,3 @@ print(show)
 #map【原理：使用iterables中的值依次传递到func中 最后返回一个数组】
 show = list(map(lambda x:x * 2 ,range(10))) 
 print(show)
-
-#使用easygui
-import easygui as g
-g.msgbox('这里是内容主体','提示','确定')

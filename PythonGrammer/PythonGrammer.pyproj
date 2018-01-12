@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>cedd9d72-ded1-449f-a7c3-89e3c9b49274</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PythonGrammer.py</StartupFile>
+    <StartupFile>PythonEasygui.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PythonFunction.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PythonEasygui.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PythonGrammer.py" />
