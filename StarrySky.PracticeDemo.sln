@@ -23,6 +23,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PythonDemo", "PythonDemo", 
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonGrammer", "PythonGrammer\PythonGrammer.pyproj", "{CEDD9D72-DED1-449F-A7C3-89E3C9B49274}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Charp.StackExchange.Redis", "Charp.StackExchange.Redis", "{CE98AAD7-DBD3-48EC-93B3-09360AA98548}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisService", "RedisService\RedisService.csproj", "{F5EAA7A6-67F9-4263-AF91-3581E03300F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +59,10 @@ Global
 		{4B75E86D-7838-4D11-BF7D-64E0772F49EC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CEDD9D72-DED1-449F-A7C3-89E3C9B49274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CEDD9D72-DED1-449F-A7C3-89E3C9B49274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5EAA7A6-67F9-4263-AF91-3581E03300F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5EAA7A6-67F9-4263-AF91-3581E03300F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5EAA7A6-67F9-4263-AF91-3581E03300F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5EAA7A6-67F9-4263-AF91-3581E03300F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +75,7 @@ Global
 		{80012D7D-C146-4405-9F21-2401987053D1} = {0D7D7A90-11B1-48E2-8C60-3EDE4E28DE23}
 		{4B75E86D-7838-4D11-BF7D-64E0772F49EC} = {0D7D7A90-11B1-48E2-8C60-3EDE4E28DE23}
 		{CEDD9D72-DED1-449F-A7C3-89E3C9B49274} = {1CD251F6-3913-4522-B784-72361FCDA780}
+		{F5EAA7A6-67F9-4263-AF91-3581E03300F1} = {CE98AAD7-DBD3-48EC-93B3-09360AA98548}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B731B82-9E1A-4036-B5FF-560882B353D0}
