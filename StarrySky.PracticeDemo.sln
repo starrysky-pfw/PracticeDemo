@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2008
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EF.CodeFirst", "EF.CodeFirst", "{76247737-8657-40FD-8A3D-3D548471D99F}"
 EndProject
@@ -22,6 +22,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PythonDemo", "PythonDemo", "{1CD251F6-3913-4522-B784-72361FCDA780}"
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonGrammer", "PythonGrammer\PythonGrammer.pyproj", "{CEDD9D72-DED1-449F-A7C3-89E3C9B49274}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AutoFacDemo", "AutoFacDemo", "{0FCA84EF-E2BA-40F4-96A0-C9F7FE9582D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DapperDemo", "DapperDemo", "{4BADEDD5-4974-46AB-8CEF-2F953FF54F5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFacManager", "AutoFacManager\AutoFacManager.csproj", "{0ED0172A-0FC8-4A15-8D22-8149E9B157FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +61,10 @@ Global
 		{4B75E86D-7838-4D11-BF7D-64E0772F49EC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CEDD9D72-DED1-449F-A7C3-89E3C9B49274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CEDD9D72-DED1-449F-A7C3-89E3C9B49274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED0172A-0FC8-4A15-8D22-8149E9B157FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ED0172A-0FC8-4A15-8D22-8149E9B157FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ED0172A-0FC8-4A15-8D22-8149E9B157FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED0172A-0FC8-4A15-8D22-8149E9B157FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +77,7 @@ Global
 		{80012D7D-C146-4405-9F21-2401987053D1} = {0D7D7A90-11B1-48E2-8C60-3EDE4E28DE23}
 		{4B75E86D-7838-4D11-BF7D-64E0772F49EC} = {0D7D7A90-11B1-48E2-8C60-3EDE4E28DE23}
 		{CEDD9D72-DED1-449F-A7C3-89E3C9B49274} = {1CD251F6-3913-4522-B784-72361FCDA780}
+		{0ED0172A-0FC8-4A15-8D22-8149E9B157FB} = {0FCA84EF-E2BA-40F4-96A0-C9F7FE9582D9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B731B82-9E1A-4036-B5FF-560882B353D0}
