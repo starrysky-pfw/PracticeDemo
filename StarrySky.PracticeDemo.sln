@@ -25,13 +25,15 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonGrammer", "PythonGram
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Charp.StackExchange.Redis", "Charp.StackExchange.Redis", "{CE98AAD7-DBD3-48EC-93B3-09360AA98548}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisService", "RedisService\RedisService.csproj", "{F5EAA7A6-67F9-4263-AF91-3581E03300F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisService", "RedisService\RedisService.csproj", "{F5EAA7A6-67F9-4263-AF91-3581E03300F1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AutoFacDemo", "AutoFacDemo", "{0FCA84EF-E2BA-40F4-96A0-C9F7FE9582D9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DapperDemo", "DapperDemo", "{4BADEDD5-4974-46AB-8CEF-2F953FF54F5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFacManager", "AutoFacManager\AutoFacManager.csproj", "{0ED0172A-0FC8-4A15-8D22-8149E9B157FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoFacManager", "AutoFacManager\AutoFacManager.csproj", "{0ED0172A-0FC8-4A15-8D22-8149E9B157FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisClient", "RedisClient\RedisClient.csproj", "{B6548564-CC24-4F15-BB49-9266211B5665}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +75,10 @@ Global
 		{0ED0172A-0FC8-4A15-8D22-8149E9B157FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ED0172A-0FC8-4A15-8D22-8149E9B157FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ED0172A-0FC8-4A15-8D22-8149E9B157FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6548564-CC24-4F15-BB49-9266211B5665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6548564-CC24-4F15-BB49-9266211B5665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6548564-CC24-4F15-BB49-9266211B5665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6548564-CC24-4F15-BB49-9266211B5665}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +93,7 @@ Global
 		{CEDD9D72-DED1-449F-A7C3-89E3C9B49274} = {1CD251F6-3913-4522-B784-72361FCDA780}
 		{F5EAA7A6-67F9-4263-AF91-3581E03300F1} = {CE98AAD7-DBD3-48EC-93B3-09360AA98548}
 		{0ED0172A-0FC8-4A15-8D22-8149E9B157FB} = {0FCA84EF-E2BA-40F4-96A0-C9F7FE9582D9}
+		{B6548564-CC24-4F15-BB49-9266211B5665} = {CE98AAD7-DBD3-48EC-93B3-09360AA98548}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B731B82-9E1A-4036-B5FF-560882B353D0}

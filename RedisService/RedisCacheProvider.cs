@@ -11,7 +11,7 @@ namespace RedisService
         {
             if (connectionMultiplexer == null || !connectionMultiplexer.IsConnected)
             {
-                connectionMultiplexer = ConnectionMultiplexer.Connect(new ConfigurationOptions() { ClientName = "", Password = "" });
+                connectionMultiplexer = ConnectionMultiplexer.Connect(new ConfigurationOptions() { EndPoints = { { "127.0.0.1", 6379 } }, Password = "pfwredis" }); //, Password = "pfwredis" 
             }
             return connectionMultiplexer;
         }
