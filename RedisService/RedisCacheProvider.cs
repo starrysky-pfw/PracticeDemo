@@ -7,30 +7,18 @@ namespace RedisService
     {
         static ConnectionMultiplexer connectionMultiplexer;
 
-        public static ConnectionMultiplexer RedisManager()
+        public static ConnectionMultiplexer Multiplexer()
         {
             if (connectionMultiplexer == null || !connectionMultiplexer.IsConnected)
             {
-                connectionMultiplexer = ConnectionMultiplexer.Connect(new ConfigurationOptions() { EndPoints = { { "127.0.0.1", 6379 } }, Password = "pfwredis" }); //, Password = "pfwredis" 
+                connectionMultiplexer = ConnectionMultiplexer.Connect(new ConfigurationOptions() { EndPoints = { { "127.0.0.1", 6379 }, { "192.168.0.13", 6379 } } }); //, Password = "pfwredis" 
             }
             return connectionMultiplexer;
         }
-    }
 
-    public class RedisService
-    {
-        private int db = 0; //默认数据库
-
-        public RedisService DB(int db)
+        public static IDatabase Database(int db = -1)
         {
-            RedisCacheProvider.RedisManager().GetDatabase(db);
-            return this;
-        }
-
-
-        public void SetStr()
-        {
-            RedisCacheProvider.RedisManager().GetDatabase().StringSet("", "", TimeSpan.FromSeconds(100));
+            return Multiplexer().GetDatabase(db);
         }
     }
 }

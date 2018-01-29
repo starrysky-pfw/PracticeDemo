@@ -1,5 +1,6 @@
 ﻿using System;
 using Autofac;
+using Autofac.Core;
 
 namespace AutoFacManager
 {
@@ -17,6 +18,8 @@ namespace AutoFacManager
             {
                 builder = new ContainerBuilder();
             }
+            builder.RegisterModule<InterfaceModule>();
+            builder.RegisterModule(new InstanceModule());
         }
 
 
@@ -28,7 +31,24 @@ namespace AutoFacManager
             }
             return container;
         }
-
-
     }
+
+    public class InterfaceModule : IModule
+    {
+        public void Configure(IComponentRegistry componentRegistry)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+
+    public class InstanceModule : Module
+    {
+        protected override void Load(ContainerBuilder builder)
+        {
+            base.Load(builder);
+        }
+    }
+
+
 }

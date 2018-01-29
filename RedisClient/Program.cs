@@ -7,10 +7,9 @@ namespace RedisClient
     {
         static void Main(string[] args)
         {
-            RedisCacheProvider.RedisManager().GetDatabase().StringSet("name", "pfw");
-            Console.WriteLine(RedisCacheProvider.RedisManager().GetDatabase().StringGet("name"));
-
-            Console.WriteLine(RedisCacheProvider.RedisManager().GetDatabase().StringGet("requirepass"));
+            RedisCacheProvider.Database().StringSet("name", "pfw");
+            Console.WriteLine(RedisCacheProvider.Database().StringGet("name"));
+            var points = RedisCacheProvider.Multiplexer().GetEndPoints();
 
             Console.WriteLine("Hello World!");
             Console.ReadKey();

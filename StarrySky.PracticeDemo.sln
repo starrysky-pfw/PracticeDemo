@@ -31,9 +31,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AutoFacDemo", "AutoFacDemo"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DapperDemo", "DapperDemo", "{4BADEDD5-4974-46AB-8CEF-2F953FF54F5A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoFacManager", "AutoFacManager\AutoFacManager.csproj", "{0ED0172A-0FC8-4A15-8D22-8149E9B157FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoFacServer", "AutoFacManager\AutoFacServer.csproj", "{0ED0172A-0FC8-4A15-8D22-8149E9B157FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisClient", "RedisClient\RedisClient.csproj", "{B6548564-CC24-4F15-BB49-9266211B5665}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisClient", "RedisClient\RedisClient.csproj", "{B6548564-CC24-4F15-BB49-9266211B5665}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
