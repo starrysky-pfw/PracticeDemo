@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EF.CodeFirst", "EF.CodeFirst", "{76247737-8657-40FD-8A3D-3D548471D99F}"
 EndProject
@@ -33,9 +33,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DapperDemo", "DapperDemo", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisClient", "RedisClient\RedisClient.csproj", "{B6548564-CC24-4F15-BB49-9266211B5665}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFacServer", "AutoFacServer\AutoFacServer.csproj", "{759BF37B-2620-4FB3-A467-D61188056AA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoFacServer", "AutoFacServer\AutoFacServer.csproj", "{759BF37B-2620-4FB3-A467-D61188056AA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFacManager", "AutoFacManager\AutoFacManager.csproj", "{19734744-5DAC-4473-839D-7B4E2005BDED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoFacManager", "AutoFacManager\AutoFacManager.csproj", "{19734744-5DAC-4473-839D-7B4E2005BDED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DoNet.Task", "DoNet.Task", "{A0DCCC79-F3CF-4005-A346-12DD075FF416}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskControl", "TaskControl\TaskControl.csproj", "{2AE98FA7-EC94-4523-952B-BE2FE5303567}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +89,10 @@ Global
 		{19734744-5DAC-4473-839D-7B4E2005BDED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19734744-5DAC-4473-839D-7B4E2005BDED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19734744-5DAC-4473-839D-7B4E2005BDED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AE98FA7-EC94-4523-952B-BE2FE5303567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE98FA7-EC94-4523-952B-BE2FE5303567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE98FA7-EC94-4523-952B-BE2FE5303567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE98FA7-EC94-4523-952B-BE2FE5303567}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +109,7 @@ Global
 		{B6548564-CC24-4F15-BB49-9266211B5665} = {CE98AAD7-DBD3-48EC-93B3-09360AA98548}
 		{759BF37B-2620-4FB3-A467-D61188056AA5} = {0FCA84EF-E2BA-40F4-96A0-C9F7FE9582D9}
 		{19734744-5DAC-4473-839D-7B4E2005BDED} = {0FCA84EF-E2BA-40F4-96A0-C9F7FE9582D9}
+		{2AE98FA7-EC94-4523-952B-BE2FE5303567} = {A0DCCC79-F3CF-4005-A346-12DD075FF416}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B731B82-9E1A-4036-B5FF-560882B353D0}
