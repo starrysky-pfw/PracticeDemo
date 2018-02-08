@@ -32,7 +32,7 @@ namespace EntityFrameworDemo
 
         public MyDbContext() : base(connection)
         {
-            if (!Database.Exists())
+            if (!Database.Exists(connection))
             {
                 Database.SetInitializer(new CreateDataBase()); //创建数据库
             }

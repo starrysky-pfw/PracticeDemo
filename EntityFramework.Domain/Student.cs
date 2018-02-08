@@ -27,7 +27,7 @@ namespace EntityFramework.Domain
         /// <summary>
         /// 联系电话
         /// </summary>
-        public int ContactPhone { get; set; }
+        public long ContactPhone { get; set; }
         /// <summary>
         /// 名族
         /// </summary>
