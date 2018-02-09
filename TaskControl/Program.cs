@@ -10,72 +10,70 @@ namespace TaskControl
     {
         static void Main(string[] args)
         {
-            //#region Start New Task 
-            //Console.WriteLine("Hello Task!");
-            //var task1 = new Task(() =>
-            //{
-            //    Thread.Sleep(3000);
-            //    Console.WriteLine("task1 is start");
-            //});
+            #region Start New Task 
+            Console.WriteLine("Hello Task!");
+            var task1 = new Task(() =>
+            {
+                Thread.Sleep(3000);
+                Console.WriteLine("task1 is start");
+            });
 
-            //var task2 = new Task(() =>
-            //{
-            //    Thread.Sleep(3000);
-            //    Console.WriteLine("task2 is start");
-            //});
-            //task1.Start();
-            //task2.Start();
-            //task1.Wait();
-            //Console.WriteLine("end output..");
-            //#endregion
+            var task2 = new Task(() =>
+            {
+                Thread.Sleep(3000);
+                Console.WriteLine("task2 is start");
+            });
+            task1.Start();
+            task2.Start();
+            task1.Wait();
+            Console.WriteLine("end output..");
+            #endregion
 
-            //#region Task Cancel
-            //Console.WriteLine(Environment.NewLine + "Cancel Task ...");
-            //var tokenSource = new CancellationTokenSource();
-            //var token = tokenSource.Token;
-            //var task = Task.Factory.StartNew(() =>
-            //{
-            //    for (var i = 0; i < 1000; i++)
-            //    {
-            //        Console.WriteLine("start output " + i);
-            //        Thread.Sleep(100);
-            //        if (token.IsCancellationRequested)
-            //        {
-            //            Console.WriteLine("Abort mission success!");
-            //            return;
-            //        }
-            //    }
-            //}, token);
-            //token.Register(() =>
-            //{
-            //    Console.WriteLine("Canceled");
-            //});
-            //Console.WriteLine("Press enter to cancel task...");
-            //Console.ReadKey();
-            //tokenSource.Cancel();
+            #region Task Cancel
+            Console.WriteLine(Environment.NewLine + "Cancel Task ...");
+            var tokenSource = new CancellationTokenSource();
+            var token = tokenSource.Token;
+            var task = Task.Factory.StartNew(() =>
+            {
+                for (var i = 0; i < 1000; i++)
+                {
+                    Console.WriteLine("start output " + i);
+                    Thread.Sleep(100);
+                    if (token.IsCancellationRequested)
+                    {
+                        Console.WriteLine("Abort mission success!");
+                        return;
+                    }
+                }
+            }, token);
+            token.Register(() =>
+            {
+                Console.WriteLine("Canceled");
+            });
+            Console.WriteLine("Press enter to cancel task...");
+            Console.ReadKey();
+            tokenSource.Cancel();
+            #endregion
 
+            #region CancellationTokenSource 练习
+            TaskCancel.CountManagement();
+            #endregion
 
-            //#endregion
-
-            TaskCancel task = new TaskCancel();
-            task.CountManagement();
             Console.Read();
         }
     }
 
-
     /// <summary>
-    /// 任务取消
+    /// CancellationTokenSource 练习 
     /// </summary>
     public class TaskCancel
     {
-        CancellationTokenSource source = new CancellationTokenSource();
+        static CancellationTokenSource source = new CancellationTokenSource();
         /// <summary>
         /// 计数管理
         /// </summary>
-        public void CountManagement()
+        public static void CountManagement()
         {
-            var str = source.ToString();
             Task.Factory.StartNew(() =>
             {
                 for (int i = 0; i < 100; i++)
@@ -98,7 +96,13 @@ namespace TaskControl
         /// </summary>
         public void Counter(CancellationTokenSource source)
         {
-
+            Task.Run(() =>
+            {
+                return Task.Run(() =>
+                {
+                    return "";
+                });
+            }, new CancellationTokenSource().Token);
         }
     }
 }
