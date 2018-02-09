@@ -64,13 +64,13 @@ namespace TaskControl
     }
 
     /// <summary>
-    /// CancellationTokenSource 练习 
+    /// CancellationTokenSource 练习 <see cref="CancellationTokenSource"/>[可以使用<see/>标签 查看具体的实现]
     /// </summary>
     public class TaskCancel
     {
         static CancellationTokenSource source = new CancellationTokenSource();
         /// <summary>
-        /// 计数管理
+        /// 计数管理<see cref="Task"/>
         /// </summary>
         public static void CountManagement()
         {
